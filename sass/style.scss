@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  margin: 0;
+  background-color: #1a1a1a;
+}
+
+.Sphere {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff8a00, #800f39);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Floor {
+  background-image: linear-gradient(to bottom, #20489a, #1a1a1a);
+  background-color: #fafafa;
+  width: 100%;
+  flex-grow: 1;
+}
